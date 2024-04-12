@@ -22,7 +22,18 @@ function App() {
                         />
                     </div>
                     <div className="input-wrapper2">
-                        <input ref={inputRef} type="text" placeholder="0" className="input" maxLength="3" />
+                        <input
+                            ref={inputRef}
+                            type="text"
+                            placeholder="0"
+                            className="input"
+                            maxLength="3"
+                            onKeyDown={(event) => {
+                                if (isNaN(event.key) && event.key !== "Backspace") {
+                                    event.preventDefault()
+                                }
+                            }}
+                        />
                     </div>
                 </div>
             </div>
