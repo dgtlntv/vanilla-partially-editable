@@ -1,0 +1,23 @@
+@import "node_modules/vanilla-framework";
+@include vanilla;
+
+.input {
+    padding-left: 103px;
+}
+
+.input-wrapper::before {
+    position: absolute;
+    pointer-events: none;
+    padding-left: 8px;
+    padding-top: 4px;
+    color: #404040;
+    content: "10.245.136.";
+}
+
+.input-wrapper2::before {
+    position: absolute;
+    pointer-events: none;
+    padding-left: 8px;
+    padding-top: 4px;
+    content: "10.245.136.";
+}
